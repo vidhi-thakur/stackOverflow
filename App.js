@@ -32,6 +32,7 @@ const App = () => {
       .then(responseJson => {
         let fetchedData = responseJson.items;
         setData(fetchedData);
+        setInitialData(fetchedData)
       }).catch(error => console.log(error.message))
   }
 
