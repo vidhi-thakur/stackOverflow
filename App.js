@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import {
   View,
   StyleSheet,
-  Text,
   Alert,
   FlatList,
   ActivityIndicator,
@@ -52,8 +51,8 @@ const App = () => {
   }
 
   function handleOnchange(text) {
-    setInput(text);
     searchText(text);
+    setInput(text);
   }
 
   const handleOnpress = () => {
