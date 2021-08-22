@@ -3,16 +3,14 @@ import React, { useState, useEffect } from 'react';
 import {
   View,
   StyleSheet,
-  Alert,
   FlatList,
-  ActivityIndicator,
 } from 'react-native';
 import Header from './components/Header';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Input, Button } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Card from './components/Card';
-import apiData from './apiData.json';
+// import apiData from './apiData.json';
 
 const App = () => {
   const [input, setInput] = useState("");
